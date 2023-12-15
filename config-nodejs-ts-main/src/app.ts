@@ -1,6 +1,10 @@
 import express from "express";
 import { router } from "./router";
+const cors = require('cors');
 
+const app = express();
+
+app.use(cors());
 /**
  * The App class represents the Express application.
  * @class
@@ -12,6 +16,9 @@ export class App {
    */
   public server: express.Application = express();
   constructor() {
+    const app = express();
+
+     app.use(cors());
     this.server = express();
     this.middleware();
     this.router();
