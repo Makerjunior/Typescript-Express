@@ -15,7 +15,9 @@ router.get('/getUser/:name', async (req, res) => {
       try {
      
      const simplifiedUser: SimplifiedGitHubUser = await getSimplifiedApiUser(name);
+     console.log(simplifiedUser);
      res.json(simplifiedUser);
+
     } catch (error) {
       res.status(500).json({ error: 'Erro na requisição' });
     }
