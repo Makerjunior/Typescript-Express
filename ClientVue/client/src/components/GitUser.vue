@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div v-if="userData.data">
+    <div>
       <h1>{{ userData.data.name }}</h1>
       <img :src="userData.data.avatar_url" alt="Avatar">
       <p><a :href=userData.data.html_url>Github</a> </p> 

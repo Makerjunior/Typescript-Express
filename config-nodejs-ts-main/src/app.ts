@@ -13,9 +13,9 @@ export class App {
    */
   public server: express.Application = express();
   constructor() {
-    //const app = express();
+    const app = express();
     const cors = require('cors');
-   /// app.use(cors());
+ //   app.use(cors());
     this.server = express();
     this.server.use(cors());
     this.middleware();

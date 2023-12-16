@@ -1,4 +1,9 @@
 # client
+##Rodar primeiramente o servisor antes de roda ro client
+Desativar a configuração de path do babel
+```
+"requireConfigFile": false, 
+```
 
 ## Project setup
 ```
