@@ -24,5 +24,5 @@ npm run dev
 npm run serve
 ```
 
-
+A aplicação mostra como consumir uma API no back-and usando axios, fornecendo os dados via Espress para serem consumidos em um client Vue.js
 
